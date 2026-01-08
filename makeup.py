@@ -3,8 +3,8 @@ class Makeup:
         self.price = price
         self.quality = quality
 
-    def apply(self):  
-        pass
+    def apply(self, *args) -> str:  
+        return f'you apply the makeup to{", ".join(args)}'
 
     def sell(self): 
         pass

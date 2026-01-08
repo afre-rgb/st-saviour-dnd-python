@@ -1,10 +1,12 @@
 from makeup import Makeup
 
 class Blush(Makeup):  
-    def __init__(self, price: float, quality: bool, pigment: str, liquid: bool,):
+    def __init__(self, price: float, quality: bool, pigments: list, liquid: bool,):
         super().__init__(price, quality)
-        self.pigment = pigment
+        self.pigments = pigments
         self.liquid = liquid
 
-    def add_pigment(self):
-        pass 
+    # TODO make variadic function with *args!
+    def add_pigment(self, pigments: list):
+        for pigment in pigments:
+            self.pigments.append(pigment)
