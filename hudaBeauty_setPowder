@@ -1,0 +1,8 @@
+from setting_powder import settingPowder   
+
+class HudaBeautySettingPowder(settingPowder):
+    def __init__(self, price: float, quality: bool, finish: str, color: str):
+        super().__init__(price, quality, finish, color) 
+
+    def bake(self):
+        pass 

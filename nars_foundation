@@ -1,0 +1,10 @@
+from foundation import Foundation 
+
+class narsFoundation(Foundation):
+    def __init__(self, price: float, quality: bool, shade: str, variant):
+        super().__init__(price, quality)
+        self.shade = shade 
+        self.variant = variant
+    
+    def blend(self):
+        pass 
